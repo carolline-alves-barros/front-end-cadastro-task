@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<?php
+
+require_once('settings.php');
+
+$login_url = 'https://accounts.google.com/o/oauth2/v2/auth?scope=' . urlencode('https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.me') . '&redirect_uri=' . urlencode(CLIENT_REDIRECT_URL) . '&response_type=code&client_id=' . CLIENT_ID . '&access_type=online';
+
+?>
+
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>Login</h3>
+    <a href="<?= $login_url ?>">Login with Google</a>
+    <fieldset>
+      <input placeholder="Usuario" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Senha" type="password" tabindex="2" required>
+    </fieldset>
+   
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+    
+  </form>
+</div>
+  
+  
+</body>
+</html>

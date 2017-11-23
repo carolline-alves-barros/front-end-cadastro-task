@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Task</title>
+  
+      <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="container">  
+   <form id="contact" action="add.php" method="post" name="form1">
+    <h3>Criação de Task</h3>
+   
+    <fieldset><label> Nome da Task </label>
+      <input placeholder="nome​ ​da​ ​​task​" type="text" tabindex="1" name="nome" required autofocus>
+    </fieldset>
+    <fieldset><label> Descrição da Task </label>
+      <input placeholder="descrição​ ​da​ ​​task" type="text" tabindex="2" name="descricao" required>
+    </fieldset>
+    <fieldset><label> Anexar arquivos </label>
+      <input placeholder="anexos" type="file" tabindex="3"> >
+    </fieldset>
+    <fieldset><label> Prioridade da Task </label>
+      <select name="prioridade" form="prioridadeform">
+			<option value="um">1</option>
+			<option value="dois">2</option>
+			<option value="tres">3</option>
+			<option value="quatro">4</option>
+			<option value="cinco">5</option>
+</select>
+    </fieldset>
+    <fieldset><label> Usuário </label>
+      <input placeholder="usuário" type="text" tabindex="4" name="usuario" required>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Criar</button>
+    </fieldset>
+    
+  </form>
+</div>
+  
+  
+</body>
+</html>

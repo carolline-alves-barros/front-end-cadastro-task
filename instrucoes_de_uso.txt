@@ -1,0 +1,6 @@
+
+A aplicação foi feita com PHP integrando com MySql.
+
+Deve subir o arquivo database.sql no MySql para funcionar.
+
+Demorei em torno de 3 horas para desenvolver o html mais o css, e mais 2 horas para o php juntamente com o banco de dados. 
