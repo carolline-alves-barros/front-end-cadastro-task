@@ -8,7 +8,7 @@
 //including the database connection file
 include_once("config.php");
  
-if(isset($_POST['Submit'])) {    
+if(isset($_POST['submit'])) {    
     $nome = $_POST['nome'];
 	$descricao = $_POST['descricao'];
 	$prioridade = $_POST['prioridade'];
